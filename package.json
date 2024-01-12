@@ -1,0 +1,25 @@
+{
+  "name": "cse341webservices",
+  "version": "1.0.0",
+  "description": "school repo for learning web services",
+  "main": "index.js",
+  "scripts": {
+    "test": "nptest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nr1cha/CSE341WebServices.git"
+  },
+  "keywords": [
+    "webService"
+  ],
+  "author": "Nick Richards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nr1cha/CSE341WebServices/issues"
+  },
+  "homepage": "https://github.com/Nr1cha/CSE341WebServices#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
