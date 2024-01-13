@@ -4,7 +4,8 @@
   "description": "school repo for learning web services",
   "main": "index.js",
   "scripts": {
-    "test": "nptest"
+    "test": "nptest",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
