@@ -1,3 +1,4 @@
+const { ObjectId } = require("mongodb");
 const { getDb } = require("../db");
 
 
@@ -6,4 +7,9 @@ async function getAllContactsModel() {
     return db.collection("contacts").find().toArray();
 };
 
-module.exports = { getAllContactsModel };
+async function getSingleContactModel(id) {
+    const db = await getDb();
+    return db.collection("contacts").find({ "_id": new ObjectId(id) }).toArray();
+};
+
+module.exports = { getAllContactsModel, getSingleContactModel };

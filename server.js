@@ -10,7 +10,6 @@ const contactsRoutes = require("./routes/contacts");
 
 app.use("/", indexRoutes);
 app.use("/contacts", contactsRoutes);
-// app.use("/name", nameRoutes.router);
 
 connectToServer((err) => {
     if (err) {
