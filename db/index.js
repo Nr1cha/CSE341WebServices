@@ -17,7 +17,7 @@ module.exports = {
             _db = db;
             callback()
         } catch (err) {
-            callback(error);
+            callback(err);
         }
     },
 
