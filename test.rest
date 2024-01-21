@@ -1,0 +1,15 @@
+http://localhost:3000/contacts
+
+###
+
+
+http://localhost:3000/contacts/65ac0cb51410d142166acbe3
+
+###
+# render.com testing
+https://webservicesclass.onrender.com/contacts
+
+###
+
+
+https://webservicesclass.onrender.com/contacts/65ac0cb51410d142166acbe3
