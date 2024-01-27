@@ -2,12 +2,14 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 const { connectToServer } = require("./db");
+const bodyParser = require("body-parser");
 
 // my import of routes
 const indexRoutes = require("./routes");
 const contactsRoutes = require("./routes/contacts");
 // const nameRoutes = require("./routes/name");`
 
+app.use(bodyParser.json()); //this must be before my other stuff in the URL
 app.use("/", indexRoutes);
 app.use("/contacts", contactsRoutes);
 

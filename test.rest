@@ -12,4 +12,35 @@ https://webservicesclass.onrender.com/contacts
 ###
 
 
-https://webservicesclass.onrender.com/contacts/65ac0cb51410d142166acbe3
+https://webservicesclass.onrender.com/contacts/65ac0ba81410d142166acbe1
+
+
+
+
+
+#####POST
+POST http://localhost:3000/contacts/65ac0ba81410d142166acbe1 HTTP/1.1
+content-type: application/json
+
+{
+                "firstName": "brooke!",
+                "lastName": "richards",
+                "email": "email@email.com",
+                "favoriteColor": "red",
+                "birthday": "1991-07-05"
+}
+###
+PUT http://localhost:3000/contacts/create HTTP/1.1
+content-type: application/json
+
+{
+                "firstName": "dallin",
+                "lastName": "frandsen",
+                "email": "dallin@email.com",
+                "favoriteColor": "blue",
+                "birthday": "1985-07-05"
+}
+
+###
+DELETE http://localhost:3000/contacts/65b496b5365677dae3f33b01 HTTP/1.1
+content-type: application/json

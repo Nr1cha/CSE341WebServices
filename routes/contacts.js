@@ -18,7 +18,7 @@ router.get("/:id", getSingleContact);
 router.post("/:id", updateSingleContact);
 
 // where to put route
-router.put("/:id", setSingleContact);
+router.put("/create", setSingleContact);
 
 // where to delete route
 router.delete("/:id", deleteSingleContact);
