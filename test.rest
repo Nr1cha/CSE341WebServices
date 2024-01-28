@@ -44,3 +44,36 @@ content-type: application/json
 ###
 DELETE http://localhost:3000/contacts/65b496b5365677dae3f33b01 HTTP/1.1
 content-type: application/json
+
+###
+# render.com TESTING CRUD
+
+POST https://webservicesclass.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+                "firstName": "brooke!",
+                "lastName": "richards",
+                "email": "email@email.com",
+                "favoriteColor": "red",
+                "birthday": "1991-07-05"
+}
+
+###
+
+
+PUT https://webservicesclass.onrender.com/contacts/65ac0ba81410d142166acbe1 HTTP/1.1
+content-type: application/json
+
+{
+                "firstName": "dallin",
+                "lastName": "frandsen",
+                "email": "dallin@email.com",
+                "favoriteColor": "blue",
+                "birthday": "1985-07-05"
+}
+
+
+###
+DELETE https://webservicesclass.onrender.com/contacts/65ac0ba81410d142166acbe1 HTTP/1.1
+content-type: application/json
