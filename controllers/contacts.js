@@ -40,7 +40,7 @@ async function setSingleContact(req, res) {
     const response = await setSingleContactModel(payload);
     res.setHeader('Content-Type', 'application/json');
     if (response.acknowledged) {
-        res.status(201).json(response);
+        res.status(204).json(response);
     } else {
         console.log(response)
         res.status(500).json(response.error || 'Some error occurred while creating the contact.');
