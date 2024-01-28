@@ -48,12 +48,12 @@ content-type: application/json
 ###
 # render.com TESTING CRUD
 
-POST https://webservicesclass.onrender.com/contacts HTTP/1.1
+POST https://webservicesclass.onrender.com/contacts/65b5a5a9724065bdc077b776 HTTP/1.1
 content-type: application/json
 
 {
-                "firstName": "brooke!",
-                "lastName": "richards",
+                "firstName": "dude!",
+                "lastName": "person",
                 "email": "email@email.com",
                 "favoriteColor": "red",
                 "birthday": "1991-07-05"
@@ -62,7 +62,7 @@ content-type: application/json
 ###
 
 
-PUT https://webservicesclass.onrender.com/contacts/65ac0ba81410d142166acbe1 HTTP/1.1
+PUT https://webservicesclass.onrender.com/contacts/create HTTP/1.1
 content-type: application/json
 
 {
@@ -75,5 +75,5 @@ content-type: application/json
 
 
 ###
-DELETE https://webservicesclass.onrender.com/contacts/65ac0ba81410d142166acbe1 HTTP/1.1
+DELETE https://webservicesclass.onrender.com/contacts/65b5a5a9724065bdc077b776 HTTP/1.1
 content-type: application/json
