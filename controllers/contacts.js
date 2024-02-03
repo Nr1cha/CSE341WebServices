@@ -24,6 +24,17 @@ async function getSingleContact(req, res) {
 
 // post logic
 async function updateSingleContact(req, res) {
+    /*  #swagger.parameters['body'] = {
+        in: 'body',
+        schema: {
+            firstName: 'john',
+            lastName: 'doe',
+            email: 'example@email.com',
+            favoriteColor: 'colorHere',
+            birthday: '2024-02-03'
+        }
+    } 
+    */
     const payload = req.body;
     const response = await updateSingleContactModel(req.params.id, payload); //just getting the id and the whole body of the request
     res.setHeader('Content-Type', 'application/json');
@@ -36,6 +47,17 @@ async function updateSingleContact(req, res) {
 
 // put logic
 async function setSingleContact(req, res) {
+    /*  #swagger.parameters['body'] = {
+    in: 'body',
+    schema: {
+        firstName: 'john',
+        lastName: 'doe',
+        email: 'example@email.com',
+        favoriteColor: 'colorHere',
+        birthday: '2024-02-03'
+    }
+} 
+*/
     const payload = req.body;
     const response = await setSingleContactModel(payload);
     res.setHeader('Content-Type', 'application/json');
