@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { returnName } = require("../controllers");
 const swaggerUI = require("swagger-ui-express");
-const swaggerConfig = require("../swagger-output.json");
+const swaggerConfig = require(`../swagger-output-${process.env.LANE}.json`);
 const contactsRoutes = require("./contacts");
 
 router.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerConfig));
