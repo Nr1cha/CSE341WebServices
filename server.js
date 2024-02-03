@@ -11,8 +11,15 @@ app.use(cors());
 const indexRoutes = require("./routes");
 // const nameRoutes = require("./routes/name");`
 
-app.use(bodyParser.json()); //this must be before my other stuff in the URL
 app.use("/", indexRoutes);
+app.use(bodyParser.json()); //this must be before my other stuff in the URL
+
+app.use(cors({
+    origin: 'https://webservicesclass.onrender.com/',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+}));
+
 
 
 connectToServer((err) => {

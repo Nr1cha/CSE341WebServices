@@ -3,7 +3,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
-        title: 'Contacts API! sfasdfasfasf',
+        title: 'Contacts API',
         description: 'List of Contacts'
     },
     host: process.env.HOST
