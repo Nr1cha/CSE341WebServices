@@ -7,7 +7,7 @@ const doc = {
         description: 'List of Contacts'
     },
     host: process.env.HOST,
-    schemes: ['http', 'https'],
+    schemes: process.env.LANE !== 'prod' ? ['http'] : ['https'],
 };
 
 const outputFile = `./swagger-output-${process.env.LANE}.json`;

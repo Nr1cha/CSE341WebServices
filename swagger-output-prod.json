@@ -5,10 +5,9 @@
     "description": "List of Contacts",
     "version": "1.0.0"
   },
-  "host": "webservicesclass.onrender.com/",
+  "host": "webservicesclass.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
