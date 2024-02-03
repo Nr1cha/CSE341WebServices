@@ -14,6 +14,13 @@ const indexRoutes = require("./routes");
 app.use("/", indexRoutes);
 app.use(bodyParser.json()); //this must be before my other stuff in the URL
 
+app.use(cors({
+    origin: 'http://yourfrontenddomain.com',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+}));
+
+
 
 connectToServer((err) => {
     if (err) {
