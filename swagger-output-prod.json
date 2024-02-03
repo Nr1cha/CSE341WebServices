@@ -8,7 +8,8 @@
   "host": "webservicesclass.onrender.com/",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {

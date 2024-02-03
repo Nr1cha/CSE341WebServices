@@ -6,7 +6,8 @@ const doc = {
         title: 'Contacts API',
         description: 'List of Contacts'
     },
-    host: process.env.HOST
+    host: process.env.HOST,
+    schemes: ['http', 'https'],
 };
 
 const outputFile = `./swagger-output-${process.env.LANE}.json`;
