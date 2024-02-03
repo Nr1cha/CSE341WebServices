@@ -3,7 +3,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 const { connectToServer } = require("./db");
 const bodyParser = require("body-parser");
+const cors = require('cors');
 
+app.use(cors());
 
 // my import of routes
 const indexRoutes = require("./routes");
