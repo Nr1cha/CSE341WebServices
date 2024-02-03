@@ -15,7 +15,7 @@ async function getSingleContactModel(id) {
 // #######################
 
 // post function
-async function updateSingleContactModel(id, payload) {
+async function updateSingleContactModel(id, payload = {}) {
     const db = await getDb();
 
     return db.collection("contacts").updateOne(
@@ -33,7 +33,7 @@ async function updateSingleContactModel(id, payload) {
 };
 
 // put function
-async function setSingleContactModel(payload) {
+async function setSingleContactModel(payload = {}) {
     const db = await getDb();
 
     return db.collection("contacts").insertOne(
